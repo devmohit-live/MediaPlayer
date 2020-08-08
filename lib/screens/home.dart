@@ -12,13 +12,23 @@ class Home extends StatelessWidget {
         padding: EdgeInsets.all(20.0),
         alignment: Alignment.center,
         decoration: BoxDecoration(
-            // border: Border.all(color: Colors.deepOrange.shade700, width: 5),
-            // borderRadius: BorderRadius.circular(5),
-            ),
+          color: Colors.amber.shade600,
+          // border: Border.all(color: Colors.deepOrange.shade700, width: 5),
+          // borderRadius: BorderRadius.circular(5),
+        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            Container(
+              width: 180,
+              height: 180,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(90),
+                  border: Border.all(color: Colors.deepOrange, width: 5),
+                  image: DecorationImage(
+                      image: Image.asset('assets/images/me.jpg').image)),
+            ),
             Card(
               color: Colors.pinkAccent,
               elevation: 8,
